@@ -1,0 +1,138 @@
+<view class="container">
+
+  <scroll-view bindscroll="scroll" scroll-top="{{scrollTop}}" scroll-y="true" style="position:absolute; top:0; left:0; right:0; bottom:0;">
+    <block wx:for="{{items}}" wx:for-item="item" wx:for-index="item_key" wx:key="this">
+      <!-- 搜索框 -->
+      <block wx:if="{{item.type === 'search'}}">
+        <include src="components/search/search.wxml" />
+      </block>
+      <!-- banner轮播 -->
+      <block wx:if="{{item.type === 'banner'}}">
+        <include src="components/banner/banner.wxml" />
+      </block>
+    </block>
+    <view class="label-title">
+        <label><image src="/images/icons/iconfont-5.png" mode="widthFix"></image> 韩范风格</label>
+        <label><image src="/images/icons/iconfont-5.png" mode="widthFix"></image> 7天无理由退换</label>
+        <label><image src="/images/icons/iconfont-5.png" mode="widthFix"></image> 59包邮</label>
+    </view>
+    <view class="category">
+        <view class="category-item">
+            <navigator url="/pages/goods/index?goods_id=2">
+                <image src="/images/1d3d094fbac006961922abfa2524ef80.gif" mode="widthFix"></image>
+                <view class="category-title">大衣外套</view>
+            </navigator>
+        </view>
+        <view class="category-item">
+            <navigator url="/pages/goods/index?goods_id=2">
+                <image src="/images/4e3f0ba26ccf05aab126aedd86e0589a.png" mode="widthFix"></image>
+                <view class="category-title">针织内搭</view>
+            </navigator>
+        </view>
+        <view class="category-item">
+            <navigator url="/pages/goods/index?goods_id=2">
+                <image src="/images/9cae4c3e8b452fa66afd00a9b1d312c5.gif" mode="widthFix"></image>
+                <view class="category-title">裙子套装</view>
+            </navigator>
+        </view>
+        <view class="category-item">
+            <navigator url="/pages/goods/index?goods_id=2">
+                <image src="/images/38bfe0f590e1a1ce3ce775baa91f61fb.gif" mode="widthFix"></image>
+                <view class="category-title">睡衣内衣</view>
+            </navigator>
+        </view>
+        <view class="category-item">
+            <navigator url="/pages/goods/index?goods_id=2">
+                <image src="/images/54f429bd548ea17b5718c1c3d81a2222.png" mode="widthFix"></image>
+                <view class="category-title">显瘦裤子</view>
+            </navigator>
+        </view>
+        <view class="category-item">
+            <navigator url="/pages/goods/index?goods_id=2">
+                <image src="/images/66ecbc6fb9c76376aa0633d2d1501eaa.gif" mode="widthFix"></image>
+                <view class="category-title">秋冬鞋靴</view>
+            </navigator>
+        </view>
+        <view class="category-item">
+            <navigator url="/pages/goods/index?goods_id=2">
+                <image src="/images/a801ee3ad68b620e6277f7302827855b.png" mode="widthFix"></image>
+                <view class="category-title">包包配饰</view>
+            </navigator>
+        </view>
+        <view class="category-item">
+            <navigator url="/pages/goods/index?goods_id=2">
+                <image src="/images/ae988558d76811c9c87fe3ea30ff5a50.png" mode="widthFix"></image>
+                <view class="category-title">买一送一</view>
+            </navigator>
+        </view>
+        <view class="category-item">
+            <navigator url="/pages/goods/index?goods_id=2">
+                <image src="/images/e89fc6ab04ed8bc26c2e77e07b80c002.png" mode="widthFix"></image>
+                <view class="category-title">划算拼团</view>
+            </navigator>
+        </view>
+        <view class="category-item">
+            <navigator url="/pages/goods/index?goods_id=2">
+                <image src="/images/e296806aa03a88a3609858ab520f9311.png" mode="widthFix"></image>
+                <view class="category-title">一分钱抽奖</view>
+            </navigator>
+        </view>
+        <view class="clear"></view>
+    </view>
+    <view class="clear"></view>
+    <!-- 商品推荐 -->
+    <!-- <view class="recommended-index-list m-top20">
+      <view class="title-header b-f t-c f-32 col-3">新品推荐</view>
+    </view>
+    <view class="index_sale ">
+      <scroll-view scroll-x="true">
+        <navigator hover-class="none" style="display: inline-block;" url="../goods/index?goods_id={{item.goods_id}}" wx:for="{{newest}}" wx:key="this">
+          <view class="page-column">
+            <view class="sale_img">
+              <image mode="aspectFill" src="{{item.image[0].file_path}}"></image>
+            </view>
+            <view class="content onelist-hidden">
+              <text>{{item.goods_name}}</text>
+            </view>
+            <text class="price col-m f-30">￥{{item.spec[0].goods_price}}</text>
+          </view>
+        </navigator>
+      </scroll-view>
+    </view> -->
+
+    <!-- 猜您喜欢 -->
+    <view class="title-hrbg" style="margin-top:10rpx">
+      <text class="cont">
+        <text class="iconfont icon-huo col-m">猜您喜欢</text>
+      </text>
+      <view class="hr"></view>
+    </view>
+    <view class="category-list">
+      <navigator class="list b-f" hover-class="none" url="../goods/index?goods_id={{item.goods_id}}" wx:for="{{best}}" wx:key="this">
+        <view class="left">
+          <view class="img">
+            <image class="goodsImg" mode="widthFix" src="{{item.image[0].file_path}}"></image>
+          </view>
+        </view>
+        <view class="right">
+          <view class="cont">
+            <text class="f-30 title twolist-hidden m-top10">{{item.goods_name}}</text>
+            <text class="price f-34 col-m f-w">￥{{item.spec[0].goods_price}}</text>
+          </view>
+        </view>
+      </navigator>
+    </view>
+
+    <!-- 底线 -->
+    <view class="title-footer p-r">
+      <text class="f-24 col-9 cont">我是有底线的</text>
+      <view class="hr"></view>
+    </view>
+  </scroll-view>
+
+  <!-- 返回顶部 -->
+  <view bindtap="goTop" class="widget-goTop" wx:if="{{floorstatus}}">
+    <text class="iconfont icon-fanhuidingbu"></text>
+  </view>
+
+</view>
