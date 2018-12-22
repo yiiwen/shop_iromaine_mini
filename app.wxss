@@ -119,6 +119,7 @@
 .category-list .right .cont .title {
   height: 82rpx;
   font-size: 28rpx;
+  line-height:41rpx;
 }
 
 .category-list.arrange .list {

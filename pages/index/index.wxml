@@ -18,61 +18,61 @@
     </view>
     <view class="category">
         <view class="category-item">
-            <navigator url="/pages/goods/index?goods_id=2">
+            <navigator url="/pages/goods/index?goods_id=2" hover-class="none">
                 <image src="/images/1d3d094fbac006961922abfa2524ef80.gif" mode="widthFix"></image>
                 <view class="category-title">大衣外套</view>
             </navigator>
         </view>
         <view class="category-item">
-            <navigator url="/pages/goods/index?goods_id=2">
+            <navigator url="/pages/goods/index?goods_id=2" hover-class="none">
                 <image src="/images/4e3f0ba26ccf05aab126aedd86e0589a.png" mode="widthFix"></image>
                 <view class="category-title">针织内搭</view>
             </navigator>
         </view>
         <view class="category-item">
-            <navigator url="/pages/goods/index?goods_id=2">
+            <navigator url="/pages/goods/index?goods_id=2" hover-class="none">
                 <image src="/images/9cae4c3e8b452fa66afd00a9b1d312c5.gif" mode="widthFix"></image>
                 <view class="category-title">裙子套装</view>
             </navigator>
         </view>
         <view class="category-item">
-            <navigator url="/pages/goods/index?goods_id=2">
+            <navigator url="/pages/goods/index?goods_id=2" hover-class="none">
                 <image src="/images/38bfe0f590e1a1ce3ce775baa91f61fb.gif" mode="widthFix"></image>
                 <view class="category-title">睡衣内衣</view>
             </navigator>
         </view>
         <view class="category-item">
-            <navigator url="/pages/goods/index?goods_id=2">
+            <navigator url="/pages/goods/index?goods_id=2" hover-class="none">
                 <image src="/images/54f429bd548ea17b5718c1c3d81a2222.png" mode="widthFix"></image>
                 <view class="category-title">显瘦裤子</view>
             </navigator>
         </view>
         <view class="category-item">
-            <navigator url="/pages/goods/index?goods_id=2">
+            <navigator url="/pages/goods/index?goods_id=2" hover-class="none">
                 <image src="/images/66ecbc6fb9c76376aa0633d2d1501eaa.gif" mode="widthFix"></image>
                 <view class="category-title">秋冬鞋靴</view>
             </navigator>
         </view>
         <view class="category-item">
-            <navigator url="/pages/goods/index?goods_id=2">
+            <navigator url="/pages/goods/index?goods_id=2" hover-class="none">
                 <image src="/images/a801ee3ad68b620e6277f7302827855b.png" mode="widthFix"></image>
                 <view class="category-title">包包配饰</view>
             </navigator>
         </view>
         <view class="category-item">
-            <navigator url="/pages/goods/index?goods_id=2">
+            <navigator url="/pages/goods/index?goods_id=2" hover-class="none">
                 <image src="/images/ae988558d76811c9c87fe3ea30ff5a50.png" mode="widthFix"></image>
                 <view class="category-title">买一送一</view>
             </navigator>
         </view>
         <view class="category-item">
-            <navigator url="/pages/goods/index?goods_id=2">
+            <navigator url="/pages/goods/index?goods_id=2" hover-class="none">
                 <image src="/images/e89fc6ab04ed8bc26c2e77e07b80c002.png" mode="widthFix"></image>
                 <view class="category-title">划算拼团</view>
             </navigator>
         </view>
         <view class="category-item">
-            <navigator url="/pages/goods/index?goods_id=2">
+            <navigator url="/pages/goods/index?goods_id=2" hover-class="none">
                 <image src="/images/e296806aa03a88a3609858ab520f9311.png" mode="widthFix"></image>
                 <view class="category-title">一分钱抽奖</view>
             </navigator>
