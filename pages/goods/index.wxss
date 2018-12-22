@@ -331,3 +331,24 @@
 .goods-fixed-icon contact-button {
   display: block;
 }
+
+
+#buyPop{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1000;
+}
+
+.productImgView{
+    position: relative;
+    height: 70rpx;
+}
+
+.productImg{
+    width: 180rpx;
+    display: block;
+    position: absolute;
+    top: -100rpx;
+    border-radius: 12rpx;
+}
