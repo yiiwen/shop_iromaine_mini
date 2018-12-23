@@ -127,7 +127,7 @@
 }
 
 .modal_cont_box {
-  padding: 20rpx 12px;
+  padding: 60rpx 12px;
   border-top: 1rpx solid #eee;
 }
 
@@ -336,8 +336,18 @@
 #buyPop{
     position: fixed;
     width: 100%;
+    height:100%;
+    background: rgba(0, 0, 0, 0.8);
     bottom: 0;
     z-index: 1000;
+}
+
+#goods-property{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left:0;
+  z-index: 1001;
 }
 
 .productImgView{
@@ -351,4 +361,23 @@
     position: absolute;
     top: -100rpx;
     border-radius: 12rpx;
+}
+
+.tmall-types{
+  margin-bottom: 15rpx;
+  margin-top:15rpx;
+}
+
+#buyNow{
+  background-color: #ff495e;
+  border-radius: 0;
+  color: #FFF;
+}
+
+.tipstxt{
+  margin-bottom: 10rpx;
+}
+
+.goods-property-close{
+  color: #CCC;
 }

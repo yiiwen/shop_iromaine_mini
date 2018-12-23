@@ -16,7 +16,7 @@ Page({
 
     currentIndex: 1, // 轮播图指针
     floorstatus: false, // 返回顶部
-    showView: true, // 显示商品规格
+    showView: false, // 显示商品规格
 
     detail: {}, // 商品详情信息
     goods_price: 0, // 商品价格
@@ -27,6 +27,7 @@ Page({
     goods_sku_id: 0, // 规格id
     cart_total_num: 0, // 购物车商品总数量
     specData: {}, // 多规格信息
+    buyType:0,   //购买类型，0：直接购买，1，加入购物车
   },
 
   // 记录规格的数组
@@ -229,6 +230,24 @@ Page({
     });
   },
 
+  buyOpt:function(e){
+    let buyOption = e.currentTarget.dataset.type;
+    if (buyOption == 'buyNow') {
+      this.setData({
+        buyType: 0,
+        showView:true
+      });
+    }
+    if (buyOption == 'addCart') {
+      this.setData({
+        buyType:1,
+        showView: true
+      });
+    }
+      
+    
+  },
+
   /**
    * 加入购物车and立即购买
    */
@@ -255,6 +274,9 @@ Page({
       }, function(result) {
         App.showSuccess(result.msg);
         _this.setData(result.data);
+      });
+      this.setData({
+        showView:false
       });
     }
   },
